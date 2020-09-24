@@ -25,8 +25,7 @@ public class FlightBookingtRestController {
 	@CrossOrigin
 	@PostMapping(BookingConstants.ADD_BOOKING_URL)
 	public FlightMessage addBooking(@RequestBody BookingDto bookingForm) throws InvalidBookingException, ScheduledIdNotFoundException, LoginException {
-		//After implementing the login, the uncomment it
-		//if(!(boolean)req.getAttribute("authFlag"))throw new UserException(FlightConstants.NOT_AUTHENTICATED);
+		
 		String bookingID =service.addBooking(bookingForm);
 		FlightMessage msg = new FlightMessage();
 		msg.setMessage(bookingID);

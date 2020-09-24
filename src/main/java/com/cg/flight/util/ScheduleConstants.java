@@ -4,7 +4,7 @@ public class ScheduleConstants {
 	
 	public static final String FLIGHT_NOT_AVAILABLE = "No flight is available";
 	public static final String AIRPORT_NOT_AVAILABLE ="No airport is available";
-	  public static final String SEARCH_URL= "/addflightschedule";
+	public static final String SEARCH_URL= "/addflightschedule";
 	  
 	public static final String SCH_ID_NOT_FOUND = "Scheduled Flight Id is not available";
 	public static final String SEARCH_URL1= "/cancelflightschedule/{schFlightId}";
@@ -18,8 +18,10 @@ public class ScheduleConstants {
 	public static final String SCHID_EXIST="SCHEDULE ID IS ALREADY EXIST";
 	public static final String SRC_DST_SAME="SOURCE AND DESTINATION AIRPORTS ARE SAME";
 	
+	public static final String ENTER_FLIGHT_ID="ENTER THE FLIGHT ID";
+	public static final String SCHEDULE_CREATED="SCHEDULE IS CREATED AND THE SCHEDULED FLIGHT ID : ";
 	
-		
+
 	
 
 }

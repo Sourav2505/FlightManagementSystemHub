@@ -30,7 +30,7 @@ public class FlightScheduleWebService {
 	          AirportException, FlightException, ScheduledIdNotFoundException {
 		logger.info(schedule.getFlightId());
 		String scheduledFlightId = flightService.addFlightSchedule(schedule);
-		return new FlightMessage("Schedule is created and the scheduled Flight Id is " + scheduledFlightId);
+		return new FlightMessage(ScheduleConstants.SCHEDULE_CREATED + scheduledFlightId);
 		
 	}
 	@DeleteMapping(ScheduleConstants.SEARCH_URL1)
