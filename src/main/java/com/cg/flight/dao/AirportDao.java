@@ -9,6 +9,7 @@ import com.cg.flight.entity.Airport;
 
 @Repository
 public interface AirportDao extends JpaRepository<Airport, String>{
+	//airport
 	
 	@Query("from Airport where airportCode=:sairport")
 	public Airport getAirport(@Param("sairport") String sourceAirport);
